@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         etName = findViewById(R.id.etName);
         etAge = findViewById(R.id.etAge);
-        etId.findViewById(R.id.etId);
+        etId = findViewById(R.id.etId);
         btnAddRec = findViewById(R.id.btnAddRec);
         btnViewAll = findViewById(R.id.btnViewAll);
         sActivityStatus = findViewById(R.id.sActivityStatus);
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 boolean isUpdated = myDb.updateData(etId.getText().toString(),
-                        etName.getText().toString(),etName.getText().toString(),
+                        etName.getText().toString(),etAge.getText().toString(),
                         sActivityStatus.isChecked());
 
                 if(isUpdated==true)
@@ -133,4 +133,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-

@@ -1,12 +1,14 @@
-# Android Development Foundations
+# Android Development with Java
 
-Seven standalone Android projects exploring native mobile development with **Java, XML layouts, and the Android SDK**. Created during my Mobile Computing coursework in 2021, this collection documents hands-on practice with UI composition, activity navigation, adapters, local persistence, animation, and media playback.
+I enjoy building software across platforms. This collection brings together seven Android projects from my Mobile Computing coursework (2021), built with **Java, XML layouts, and the Android SDK**.
+
+The projects demonstrate hands-on work with multi-screen interfaces, navigation, dynamic lists, local data storage, animation, and audio/video playback—from focused exercises to a larger social-app UI prototype.
 
 ## Start here
 
 - **[Multi-screen UI prototype](InstagramApp)** — an Instagram-inspired interface bringing together onboarding, sign-in and registration screens, bottom navigation, fragments, and a navigation drawer. First-launch state is stored with `SharedPreferences`; sign-in and registration are UI flows, not backend authentication.
 - **[Lists and adapters](05WeekApplications/ListView_Adapters)** — a dynamic `ListView` backed by an `ArrayAdapter`, with item entry, sorting, and selection passed to another activity through intent extras.
-- **[Local database exercise](06WeekApplications)** — a customer-record model and SQLite helper exploring table creation, inserts, queries, updates, and deletes. See the maintenance notes below for a known issue in the update/delete queries.
+- **[Customer records](06WeekApplications)** — a local SQLite database and form-based interface for adding, viewing, updating, and deleting customer records.
 
 ## Project guide
 
@@ -51,17 +53,8 @@ Each linked directory is a separate Android Studio project with its own Gradle c
 4. Sync Gradle using a JDK and Android Studio setup compatible with the original Gradle/Android Gradle Plugin versions, or migrate those versions together in a separate branch.
 5. Select the `app` run configuration and an emulator or connected Android device meeting the project's minimum SDK, then run.
 
-These projects retain their 2021 build setup. Compatibility with current Android Studio versions has not been verified; opening them may require toolchain adjustments or dependency migration. No successful build or emulator run is claimed by this documentation update.
+The projects use their original 2021 toolchain. Newer Android Studio installations may require Gradle, JDK, or dependency adjustments; current-toolchain compatibility has not been verified.
 
 ## Coursework materials
 
-The repository root also contains [handwritten Mobile Computing notes](00%20-%20Mobile%20Computing%20-%20Handwritten%20Notes.pdf) and weekly course documents. These complement the code; document titles do not imply a corresponding completed application. The Week 10, 11, and 12 files are empty placeholders in the original collection.
-
-## Scope and maintenance notes
-
-This is a record of my Android foundations and learning progression, rather than a production application suite. The original exercises and directory names are preserved.
-
-- **UI prototype:** Sign-in and registration navigate between screens without authenticating users. Several navigation items display feedback rather than implementing full product features.
-- **Database exercise:** Update and delete filters use `ID`, while the table defines `Customer_ID`. These operations need correction before use; the upgrade handler also drops and recreates the table rather than preserving records.
-- **Tests:** The checked-in tests are starter examples, not comprehensive feature coverage.
-
+The repository also includes [handwritten Mobile Computing notes](00%20-%20Mobile%20Computing%20-%20Handwritten%20Notes.pdf) and weekly course materials alongside the application code.

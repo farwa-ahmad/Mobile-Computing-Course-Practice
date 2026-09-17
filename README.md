@@ -53,7 +53,7 @@ Each linked directory is a separate Android Studio project with its own Gradle c
 4. Sync Gradle using a JDK and Android Studio setup compatible with the original Gradle/Android Gradle Plugin versions, or migrate those versions together in a separate branch.
 5. Select the `app` run configuration and an emulator or connected Android device meeting the project's minimum SDK, then run.
 
-The projects use their original 2021 toolchain. Newer Android Studio installations may require Gradle, JDK, or dependency adjustments; current-toolchain compatibility has not been verified.
+These projects preserve their original 2021 Android configuration. Modern Android Studio versions may prompt upgrades to Gradle, JDK, or dependencies when opening them.
 
 ## Coursework materials
 

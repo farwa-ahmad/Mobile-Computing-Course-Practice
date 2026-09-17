@@ -74,13 +74,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(CUSTOMER_AGE,age);
         contentValues.put(CUSTOMER_ACTIVITY,activityStatus);
 
-        db.update(TABLE_NAME, contentValues, "ID=?", new String[]{id});
-        return true;
+        int rowsUpdated = db.update(TABLE_NAME, contentValues, CUSTOMER_ID + "=?", new String[]{id});
+        return rowsUpdated > 0;
     }
 
     public Integer deleteData(String id)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_NAME,"ID=?",new String[]{id});
+        return db.delete(TABLE_NAME, CUSTOMER_ID + "=?", new String[]{id});
     }
 }

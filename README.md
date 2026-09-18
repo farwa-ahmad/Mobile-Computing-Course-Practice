@@ -9,7 +9,7 @@ The projects demonstrate hands-on work with multi-screen interfaces, navigation,
 For larger application work from the same period, see the dedicated project repositories:
 
 - **[MyList — cloud-backed task manager](https://github.com/farwa-ahmad/MyList-Android)** — a Java Android task manager using Firebase Firestore, RecyclerView, ViewBinding, due dates, completion state, and swipe-to-edit/delete interactions.
-- **[eCure — healthcare app](https://github.com/farwa-ahmad/eCure-Android)** — a larger Java/Firebase Android project with patient and doctor account flows, authentication, profiles, location features, doctor discovery, and appointment workflows. The final completed version was not pushed to GitHub; the repository preserves and cleans up the latest available source snapshot.
+- **[eCure — healthcare app](https://github.com/farwa-ahmad/eCure-Android)** — a larger Java/Firebase Android project with patient and doctor account flows, authentication, profiles, location features, doctor discovery, and appointment workflows.
 
 Those repositories are intended as the cleaner, project-focused versions. This repository preserves the broader coursework progression and supporting materials.
 
